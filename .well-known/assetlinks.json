@@ -2,7 +2,7 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "app.wellping",
+    "package_name": "edu.stanford.ssnl.wellping",
     "sha256_cert_fingerprints":
     ["1D:81:CE:A8:20:65:5E:E7:1A:C5:9F:7F:70:7A:16:CD:66:87:7C:C2:13:7C:B0:35:79:92:27:07:E8:F4:05:2D"]
   }
