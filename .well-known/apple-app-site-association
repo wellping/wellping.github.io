@@ -3,7 +3,13 @@
     "apps": [],
     "details": [{
       "appID": "GH6V22629K.app.wellping",
-      "paths": ["/app/*"]
+      "paths": ["/app/*"],
+      "appIDs": [ "GH6V22629K.app.wellping" ],
+      "components": [
+        {
+          "/": "/app/*"
+        }
+      ]
     }]
   }
 }
