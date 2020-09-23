@@ -32,7 +32,8 @@
         Completed pings today:
         <span class="each-value" id="completed-pings-today"></span>
       </p>
-      <p>ID Token: <span class="each-value" id="id-token"></span></p>
+      <p>Username: <span class="each-value" id="username"></span></p>
+      <p>Firebase ID Token: <span class="each-value" id="firebase-id-token"></span></p>
 
       <h4 style="margin-bottom: 0px;">Raw</h4>
       <pre
@@ -47,7 +48,8 @@
       const completedPingsOverall = urlParams.get("completed_pings_overall");
       const completedPingsThisWeek = urlParams.get("completed_pings_this_week");
       const completedPingsToday = urlParams.get("completed_pings_today");
-      const idToken = urlParams.get("id_token");
+      const username = urlParams.get("username");
+      const firebaseIdToken = urlParams.get("firebase_id_token");
 
       document.getElementById(
         "completed-pings-overall",
@@ -58,7 +60,8 @@
       document.getElementById(
         "completed-pings-today",
       ).innerHTML = completedPingsToday;
-      document.getElementById("id-token").innerHTML = idToken;
+      document.getElementById("username").innerHTML = username;
+      document.getElementById("firebase-id-token").innerHTML = firebaseIdToken;
 
       document.getElementById("url-params").innerHTML = JSON.stringify(
         Array.from(urlParams.entries()),
