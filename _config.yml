@@ -2,3 +2,5 @@ theme: jekyll-theme-cayman
 
 # https://stackoverflow.com/a/52645091/2603230
 include: [".well-known"]
+
+exclude: ["README.md"]
