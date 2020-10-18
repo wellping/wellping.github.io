@@ -1,8 +1,8 @@
 # Download
 
-Download on **App Store**: https://apps.apple.com/us/app/id1532364388
+Download on **App Store**: [https://apps.apple.com/us/app/id1532364388](https://apps.apple.com/us/app/id1532364388)
 
-Download on **Google Play**: https://play.google.com/store/apps/details?id=edu.stanford.ssnl.wellping
+Download on **Google Play**: [https://play.google.com/store/apps/details?id=edu.stanford.ssnl.wellping](https://play.google.com/store/apps/details?id=edu.stanford.ssnl.wellping)
 
 # Set Up Your Study File
 
