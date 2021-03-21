@@ -20,6 +20,7 @@
         Here’s the information passed to the dashboard:
       </h3>
 
+      <p>Timezone Offset: <span class="each-value" id="timezone-offset"></span></p>
       <p>
         Completed pings overall:
         <span class="each-value" id="completed-pings-overall"></span>
@@ -33,6 +34,7 @@
         <span class="each-value" id="completed-pings-today"></span>
       </p>
       <p>Username: <span class="each-value" id="username"></span></p>
+      <p>Hashed Password: <span class="each-value" id="hashed-password"></span></p>
       <p>Firebase ID Token: <span class="each-value" id="firebase-id-token"></span></p>
 
       <h4 style="margin-bottom: 0px;">Raw</h4>
@@ -45,12 +47,15 @@
     <script>
       const urlParams = new URLSearchParams(window.location.search);
 
+      const timezoneOffset = urlParams.get("timezone_offset");
       const completedPingsOverall = urlParams.get("completed_pings_overall");
       const completedPingsThisWeek = urlParams.get("completed_pings_this_week");
       const completedPingsToday = urlParams.get("completed_pings_today");
       const username = urlParams.get("username");
+      const hashedPassword = urlParams.get("hashed_password");
       const firebaseIdToken = urlParams.get("firebase_id_token");
 
+      document.getElementById("timezone-offset").innerHTML = timezoneOffset;
       document.getElementById(
         "completed-pings-overall",
       ).innerHTML = completedPingsOverall;
@@ -61,6 +66,7 @@
         "completed-pings-today",
       ).innerHTML = completedPingsToday;
       document.getElementById("username").innerHTML = username;
+      document.getElementById("hashed-password").innerHTML = hashedPassword;
       document.getElementById("firebase-id-token").innerHTML = firebaseIdToken;
 
       document.getElementById("url-params").innerHTML = JSON.stringify(
