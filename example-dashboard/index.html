@@ -36,6 +36,7 @@
       <p>Username: <span class="each-value" id="username"></span></p>
       <p>Hashed Password: <span class="each-value" id="hashed-password"></span></p>
       <p>Firebase ID Token: <span class="each-value" id="firebase-id-token"></span></p>
+      <p>Beiwe Device ID: <span class="each-value" id="beiwe-device-id"></span></p>
 
       <h4 style="margin-bottom: 0px;">Raw</h4>
       <pre
@@ -54,6 +55,7 @@
       const username = urlParams.get("username");
       const hashedPassword = urlParams.get("hashed_password");
       const firebaseIdToken = urlParams.get("firebase_id_token");
+      const beiweDeviceId = urlParams.get("beiwe_device_id");
 
       document.getElementById("timezone-offset").innerHTML = timezoneOffset;
       document.getElementById(
@@ -68,6 +70,7 @@
       document.getElementById("username").innerHTML = username;
       document.getElementById("hashed-password").innerHTML = hashedPassword;
       document.getElementById("firebase-id-token").innerHTML = firebaseIdToken;
+      document.getElementById("beiwe-device-id").innerHTML = beiweDeviceId;
 
       document.getElementById("url-params").innerHTML = JSON.stringify(
         Array.from(urlParams.entries()),
