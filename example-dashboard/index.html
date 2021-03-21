@@ -22,6 +22,7 @@
 
       <p>Timezone Offset: <span class="each-value" id="timezone-offset"></span></p>
       <p>Installation ID: <span class="each-value" id="installation-id"></span></p>
+      <p>Login Session ID: <span class="each-value" id="login-session-id"></span></p>
       <p>
         Completed pings overall:
         <span class="each-value" id="completed-pings-overall"></span>
@@ -50,6 +51,7 @@
 
       const timezoneOffset = urlParams.get("timezone_offset");
       const installationId = urlParams.get("installation_id");
+      const loginSessionId = urlParams.get("login_session_id");
       const completedPingsOverall = urlParams.get("completed_pings_overall");
       const completedPingsThisWeek = urlParams.get("completed_pings_this_week");
       const completedPingsToday = urlParams.get("completed_pings_today");
@@ -59,6 +61,7 @@
 
       document.getElementById("timezone-offset").innerHTML = timezoneOffset;
       document.getElementById("installation-id").innerHTML = installationId;
+      document.getElementById("login-session-id").innerHTML = loginSessionId;
       document.getElementById(
         "completed-pings-overall",
       ).innerHTML = completedPingsOverall;
