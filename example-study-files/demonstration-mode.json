@@ -3,7 +3,7 @@
     "id": "demonstration_mode_for_v_1_0",
     "studyFileURL": "https://wellping.github.io/example-study-files/demonstration-mode.json",
     "consentFormUrl": "https://example.com/",
-    "dashboardURL": "https://wellping.github.io/example-dashboard/demonstration-mode.html?username=__USERNAME__&timezone_offset=__TIMEZONE_OFFSET__&completed_pings_overall=__PINGS_COMPLETED_OVERALL__&completed_pings_this_week=__PINGS_COMPLETED_THIS_WEEK__&completed_pings_today=__PINGS_COMPLETED_TODAY__&firebase_id_token=__FIREBASE_ID_TOKEN__&beiwe_device_id=__BEIWE_DEVICE_ID__",
+    "dashboardURL": "https://wellping.github.io/example-dashboard/demonstration-mode.html?username=__USERNAME__&timezone_offset=__TIMEZONE_OFFSET__&completed_pings_overall=__PINGS_COMPLETED_OVERALL__&completed_pings_this_week=__PINGS_COMPLETED_THIS_WEEK__&completed_pings_today=__PINGS_COMPLETED_TODAY__&firebase_id_token=__FIREBASE_ID_TOKEN__&installation_id=__INSTALLATION_ID__",
     "server": {},
     "startDate": "2008-08-08T20:08:08.000Z",
     "endDate": "2088-08-08T20:08:08.000Z",
