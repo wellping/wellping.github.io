@@ -143,9 +143,10 @@ Paste the following code into the text box (replacing the existing code) and cli
     ".read": "false",
     "users": {
       "$username": {
-        // The user are only allowed to write to their own entry.
+        // The user are only allowed to read from and write to their own entry.
         // The user must have a fictional verified email address `[uid]@user.wellpingssnl`.
         // See `MARK: FIREBASE_AUTH_VERIFIED_FICTIONAL_EMAIL_NOTE`.
+        ".read": "auth.uid === $username && auth.token.email === auth.uid + '@user.wellpingssnl' && auth.token.email_verified === true",
         ".write": "auth.uid === $username && auth.token.email === auth.uid + '@user.wellpingssnl' && auth.token.email_verified === true"
       }
     }
