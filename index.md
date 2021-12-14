@@ -19,3 +19,7 @@ Read about [Privacy & Security](./privacy-and-security.md)!
 # Glossary
 
 Read about [Glossary](./glossary.md)!
+
+# Technical Stuff
+
+Read about [all the technical stuff related to the app](./wellping/)!
