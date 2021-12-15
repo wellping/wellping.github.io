@@ -1,10 +1,5 @@
 title: Well Ping
-description: A survey app that pings you once a while to answer questions!
 theme: jekyll-theme-cayman
-
-github:
-  is_project_page: true
-  repository_url: https://github.com/wellping/wellping
 
 # https://stackoverflow.com/a/52645091/2603230
 include: [".well-known"]

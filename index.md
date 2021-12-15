@@ -1,6 +1,12 @@
 ---
 title: "Well Ping"
+description: A survey app that pings you once a while to answer questions!
+github:
+  is_project_page: true
+  repository_url: https://github.com/wellping/wellping
 ---
+
+# Well Ping
 
 ## Download
 
