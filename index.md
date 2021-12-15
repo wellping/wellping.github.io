@@ -1,5 +1,3 @@
-# Well Ping
-
 ## Download
 
 Download on **App Store**: [https://apps.apple.com/us/app/id1532364388](https://apps.apple.com/us/app/id1532364388)
