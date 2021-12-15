@@ -11,6 +11,8 @@ Download on **App Store**: [https://apps.apple.com/us/app/id1532364388](https://
 
 Download on **Google Play**: [https://play.google.com/store/apps/details?id=edu.stanford.ssnl.wellping](https://play.google.com/store/apps/details?id=edu.stanford.ssnl.wellping)
 
+Source code: [https://github.com/wellping/wellping](https://github.com/wellping/wellping)
+
 ## Set Up Your Study File
 
 Read the guide on how to [set up your study file](./study-file-setup.md)!
