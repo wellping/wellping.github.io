@@ -1,12 +1,28 @@
 # Set Up Your Study File
 
-Your study file is a JSON file that contains all information (e.g. question streams) related to your study.
+Your study file is a [YAML](https://yaml.org/) file or a [JSON](https://www.w3schools.com/whatis/whatis_json.asp) file that contains all information (e.g. question streams, start and end dates, hour(s) to send pings each day) related to your study.
 
-> What is a JSON file? Learn more about it [here](https://www.w3schools.com/whatis/whatis_json.asp)!
+## Definitions
 
-## Set Up Question Streams
+See [Glossary](./glossary.md).
 
-A question stream
+## Create a Study File
+
+### GUI Interface
+
+If you want to easily create a study file, consider using **[Well Ping Study File Editor](https://wellping.github.io/study-file-editor/)**. With this editor, you can create, save, and load an editor file, and eventually export the editor file as a JSON study file that could be used by Well Ping.
+
+#### Example Editor Files
+
+TODO
+
+### Manual Creation
+
+Alternatively, you may also create a study file manually in JSON or YAML. You need to understand JSON or YAML. To see the exact format the JSON or YAML file should be in, refer to the source code of [`StudyFile.ts`](https://github.com/wellping/study-schemas/blob/main/src/schemas/StudyFile.ts) and related files.
+
+#### Example Study Files in JSON
+
+#### Example Study Files in YAML
 
 ## Can the study file be updated after some participants have already logged in?
 
