@@ -189,7 +189,6 @@ streams:
         - Not experiencing it
         - Other
       next: StressDurationNum
-    # FIX THIS BELOW VVVVV WITH PREV: STRESSOR
     StressDurationNum:
       id: StressDurationNum
       type: HowLongAgo
