@@ -253,8 +253,9 @@ streams:
       type: MultipleText
       question: What non-students were you talking to?
       placeholder: Select a category...
-      choices: RELATIONSHIPS
-      forceChoice: true
+      dropdownChoices:
+        choices: RELATIONSHIPS
+        forceChoice: true
       max: 3
       maxMinus: SocInteraction_Names
       variableName: TARGET_CATEGORY
