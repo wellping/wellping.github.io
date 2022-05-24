@@ -1,0 +1,290 @@
+---
+studyInfo: 
+  id: demonstration_mode_for_v_1_1_3
+  version: a
+  studyFileURL: https://wellping.github.io/example-study-files/demonstration-mode-v1_1_3.yaml
+  consentFormUrl: https://example.com/
+  dashboardURL: https://wellping.github.io/example-dashboard/demonstration-mode.html?username=__USERNAME__&timezone_offset=__TIMEZONE_OFFSET__&completed_pings_overall=__PINGS_COMPLETED_OVERALL__&completed_pings_this_week=__PINGS_COMPLETED_THIS_WEEK__&completed_pings_today=__PINGS_COMPLETED_TODAY__&firebase_id_token=__FIREBASE_ID_TOKEN__&installation_id=__INSTALLATION_ID__&login_session_id=__LOGIN_SESSION_ID__
+  server: {}
+  contactEmail: testEmail@example.com
+  startDate: "2008-08-08T20:08:08.000Z"
+  endDate: "2088-08-08T20:08:08.000Z"
+  weekStartsOn: 1
+  pingsFrequency:
+    - earliestPingNotificationTime: "00:00:00"
+      latestPingNotificationTime: "00:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "01:00:00"
+      latestPingNotificationTime: "01:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "02:00:00"
+      latestPingNotificationTime: "02:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "03:00:00"
+      latestPingNotificationTime: "03:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "04:00:00"
+      latestPingNotificationTime: "04:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "05:00:00"
+      latestPingNotificationTime: "05:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "06:00:00"
+      latestPingNotificationTime: "06:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "07:00:00"
+      latestPingNotificationTime: "07:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "08:00:00"
+      latestPingNotificationTime: "08:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "09:00:00"
+      latestPingNotificationTime: "09:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "10:00:00"
+      latestPingNotificationTime: "10:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "11:00:00"
+      latestPingNotificationTime: "11:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "12:00:00"
+      latestPingNotificationTime: "12:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "13:00:00"
+      latestPingNotificationTime: "13:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "14:00:00"
+      latestPingNotificationTime: "14:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "15:00:00"
+      latestPingNotificationTime: "15:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "16:00:00"
+      latestPingNotificationTime: "16:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "17:00:00"
+      latestPingNotificationTime: "17:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "18:00:00"
+      latestPingNotificationTime: "18:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "19:00:00"
+      latestPingNotificationTime: "19:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "20:00:00"
+      latestPingNotificationTime: "20:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "21:00:00"
+      latestPingNotificationTime: "21:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "22:00:00"
+      latestPingNotificationTime: "22:30:00"
+      expireAfterTime: "00:29:29"
+    - earliestPingNotificationTime: "23:00:00"
+      latestPingNotificationTime: "23:30:00"
+      expireAfterTime: "00:29:29"
+  streamsStartingQuestionIds:
+    myStream: Feel_Current
+  streamsOrder:
+    "0": &everyday-order
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+      - myStream
+    "1": *everyday-order
+    "2": *everyday-order
+    "3": *everyday-order
+    "4": *everyday-order
+    "5": *everyday-order
+    "6": *everyday-order
+    "7": *everyday-order
+  streamsForNthPings:
+    "1": myStream
+  streamInCaseOfError: myStream
+  streamsNotReplacedByFollowupStream: [myStream]
+  notificationContent:
+    default:
+      title: You have a new ping!
+      body: It will expire in 29 minutes.
+  specialVariablePlaceholderTreatments:
+    TARGET_CATEGORY:
+      decapitalizeFirstCharacter:
+        enabled: true
+
+streams:
+  myStream:
+    Feel_Current:
+      id: Feel_Current
+      type: Slider
+      question: Please use the slider bar to indicate how you are feeling right now.
+      slider: 
+        - extremely negative
+        - extremely positive
+      next: Feel_Ideal
+    Feel_Ideal:
+      id: Feel_Ideal
+      type: Slider
+      question: The current value on the slider bar is your previous response about how you currently feel. Please use the slider bar to indicate how you WOULD LIKE to feel.
+      slider:
+        - extremely negative
+        - extremely positive
+      defaultValueFromQuestionId: Feel_Current
+      next: Act
+    Act:
+      id: Act
+      type: ChoicesWithSingleAnswer
+      question: During the past hour, which activity did you spend the most time doing?
+      choices:
+        - In transit
+        - Listening to podcast / music
+        - Doing chores / running errands
+        - Working at a job
+        - Browsing the internet / apps
+        - Playing video games
+        - Sleeping / napping / resting
+        - Eating / drinking
+        - Watching TV / movie
+        - Others
+      randomizeChoicesOrder: true
+      randomizeExceptForChoiceIds: 
+        - Others
+      next: Anxiety
+    Anxiety:
+      id: Anxiety
+      type: ChoicesWithSingleAnswer
+      question: Which of the following best categorizes the PRIMARY anxiety you are experiencing?
+      choices: WELLBEING_CATEGORY
+      randomizeChoicesOrder: true
+      randomizeExceptForChoiceIds: 
+        - Not experiencing it
+        - Other
+      next: Stressor
+    Stressor:
+      id: Stressor
+      type: ChoicesWithSingleAnswer
+      question: Which of the following best categorizes the PRIMARY stress you are experiencing?
+      choices: WELLBEING_CATEGORY
+      randomizeChoicesOrder: true
+      randomizeExceptForChoiceIds: 
+        - Not experiencing it
+        - Other
+      next: StressDurationNum
+    # FIX THIS BELOW VVVVV WITH PREV: STRESSOR
+    StressDurationNum:
+      id: StressDurationNum
+      type: HowLongAgo
+      question: How long ago did your {PREV:Stressor} stress first come about?
+      next: StressorCope
+    StressorCope:
+      id: StressorCope
+      type: ChoicesWithMultipleAnswers
+      question: Which of the following have you done in response your {PREV:Stressor} stress? Please select all that apply.
+      choices:
+        - I thought extensively about the causes / consequences
+        - I tried not to think about it
+        - I thought about the bright side
+        - I thought about how to improve the situation
+        - Other
+      randomizeChoicesOrder: true
+      randomizeExceptForChoiceIds: 
+        - Other
+      next: SocInteraction
+    SocInteraction:
+      id: SocInteraction
+      type: YesNo
+      question: In the past hour, did you interact with anyone?
+      branchStartId:
+        yes: SocInteraction_Names
+        no: null
+      next: null
+    SocInteraction_Names:
+      id: SocInteraction_Names
+      type: MultipleText
+      question: Who were you talking to?
+      placeholder: Enter a name...
+      dropdownChoices:
+        choices: NAMES
+        forceChoice: true
+      max: 3
+      variableName: TARGET_NAME
+      indexName: INDEX
+      repeatedItemStartId: SocInteraction_Names[__INDEX__]_Relationships
+      next: SocInteraction_NonStudent
+    SocInteraction_Names[__INDEX__]_Relationships:
+      id: SocInteraction_Names[__INDEX__]_Relationships
+      type: ChoicesWithMultipleAnswers
+      question: What is your relationship(s) to [__TARGET_NAME__]?
+      choices: RELATIONSHIPS
+      randomizeChoicesOrder: true
+      randomizeExceptForChoiceIds:
+        - Other
+      next: SocInteraction_Names[__INDEX__]_Liking
+    SocInteraction_Names[__INDEX__]_Liking:
+      id: SocInteraction_Names[__INDEX__]_Liking
+      type: ChoicesWithSingleAnswer
+      question: Do you like this interaction?
+      choices: 
+        - Yes!
+        - Probably?
+        - No!
+      next: null
+    SocInteraction_NonStudent:
+      id: SocInteraction_NonStudent
+      type: MultipleText
+      question: What non-students were you talking to?
+      placeholder: Select a category...
+      choices: RELATIONSHIPS
+      forceChoice: true
+      max: 3
+      maxMinus: SocInteraction_Names
+      variableName: TARGET_CATEGORY
+      indexName: INDEX
+      next: null
+
+extraData: 
+  reusableChoices: 
+    WELLBEING_CATEGORY: 
+      - Academic
+      - Social/relationship
+      - Mental health
+      - Physical health
+      - Financial
+      - Not experiencing it
+      - Other
+    NAMES:
+      - John
+      - Tony
+      - Mary
+      - Alice
+      - Bob
+      - Jack
+      - Jason
+      - Jane
+    RELATIONSHIPS:
+      - Friend
+      - Co-worker
+      - Parent
+      - Sibling / other relative
+      - Significant other
+      - Stranger
+      - Other
