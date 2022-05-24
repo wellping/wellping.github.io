@@ -12,6 +12,8 @@ See [Glossary](./glossary.md).
 
 If you want to easily create a study file, consider using **[Well Ping Study File Editor](https://wellping.github.io/study-file-editor/)**. With this editor, you can create, save, and load an editor file, and eventually export the editor file as a JSON study file that could be used by Well Ping.
 
+*Note: The editor is incomplete as of now and may not support all features in Well Ping.*
+
 #### Example Editor Files
 
 TODO
@@ -20,9 +22,9 @@ TODO
 
 Alternatively, you may also create a study file manually in JSON or YAML. You need to understand JSON or YAML. To see the exact format the JSON or YAML file should be in, refer to the source code of [`StudyFile.ts`](https://github.com/wellping/study-schemas/blob/main/src/schemas/StudyFile.ts) and related files.
 
-#### Example Study Files in JSON
+#### Example Study Files
 
-#### Example Study Files in YAML
+See [Example Study Files](./example-study-files/).
 
 ## Can the study file be updated after some participants have already logged in?
 
