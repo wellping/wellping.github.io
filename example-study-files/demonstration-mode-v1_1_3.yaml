@@ -1,5 +1,5 @@
 ---
-studyInfo: 
+studyInfo:
   id: demonstration_mode_for_v_1_1_3
   version: a
   studyFileURL: https://wellping.github.io/example-study-files/demonstration-mode-v1_1_3.yaml
@@ -125,7 +125,7 @@ studyInfo:
   notificationContent:
     default:
       title: You have a new ping!
-      body: It will expire in 29 minutes.
+      body: It will expire in 59 minutes.
   specialVariablePlaceholderTreatments:
     TARGET_CATEGORY:
       decapitalizeFirstCharacter:
@@ -137,7 +137,7 @@ streams:
       id: Feel_Current
       type: Slider
       question: Please use the slider bar to indicate how you are feeling right now.
-      slider: 
+      slider:
         - extremely negative
         - extremely positive
       next: Feel_Ideal
@@ -166,7 +166,7 @@ streams:
         - Watching TV / movie
         - Others
       randomizeChoicesOrder: true
-      randomizeExceptForChoiceIds: 
+      randomizeExceptForChoiceIds:
         - Others
       next: Anxiety
     Anxiety:
@@ -175,7 +175,7 @@ streams:
       question: Which of the following best categorizes the PRIMARY anxiety you are experiencing?
       choices: WELLBEING_CATEGORY
       randomizeChoicesOrder: true
-      randomizeExceptForChoiceIds: 
+      randomizeExceptForChoiceIds:
         - Not experiencing it
         - Other
       next: Stressor
@@ -185,7 +185,7 @@ streams:
       question: Which of the following best categorizes the PRIMARY stress you are experiencing?
       choices: WELLBEING_CATEGORY
       randomizeChoicesOrder: true
-      randomizeExceptForChoiceIds: 
+      randomizeExceptForChoiceIds:
         - Not experiencing it
         - Other
       next: StressDurationNum
@@ -205,7 +205,7 @@ streams:
         - I thought about how to improve the situation
         - Other
       randomizeChoicesOrder: true
-      randomizeExceptForChoiceIds: 
+      randomizeExceptForChoiceIds:
         - Other
       next: SocInteraction
     SocInteraction:
@@ -242,7 +242,7 @@ streams:
       id: SocInteraction_Names[__INDEX__]_Liking
       type: ChoicesWithSingleAnswer
       question: Do you like this interaction?
-      choices: 
+      choices:
         - Yes!
         - Probably?
         - No!
@@ -261,9 +261,9 @@ streams:
       indexName: INDEX
       next: null
 
-extraData: 
-  reusableChoices: 
-    WELLBEING_CATEGORY: 
+extraData:
+  reusableChoices:
+    WELLBEING_CATEGORY:
       - Academic
       - Social/relationship
       - Mental health
