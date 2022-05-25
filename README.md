@@ -12,6 +12,6 @@ See https://docs.expo.io/workflow/linking/#universaldeep-links-without-a-custom-
 
 ### `.well-known` folder
 
-The `.well-known` folder stores files necessary for iOS (the [apple-app-site-association](./.well-known/apple-app-site-association) file) and Android (the [assetlinks.json](./.well-known/assetlinks.json) file) to recognize `wellping.github.io` as the domain to open the Well Ping app when the user visits any page under the `app` folder https://wellping.github.io/app/.
+The [`.well-known`](./.well-known/) folder stores files necessary for iOS (the [apple-app-site-association](./.well-known/apple-app-site-association) file) and Android (the [assetlinks.json](./.well-known/assetlinks.json) file) to recognize `wellping.github.io` as the domain to open the Well Ping app when the user visits any page under the `app` folder https://wellping.github.io/app/.
 
 Learn more: https://github.com/wellping/wellping/issues/20.
