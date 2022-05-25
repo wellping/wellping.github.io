@@ -10,7 +10,7 @@ See [Glossary](./glossary.md).
 
 ### GUI Interface
 
-If you want to easily create a study file, consider using **[Well Ping Study File Editor](https://wellping.github.io/study-file-editor/)**. With this editor, you can create, save, and load an editor file, and eventually export the editor file as a JSON study file that could be used by Well Ping.
+If you want to easily create a study file, consider using the **[Well Ping Study File Editor](https://wellping.github.io/study-file-editor/)**. With this editor, you can create, save, and load an editor file, and eventually export the editor file as a JSON study file that could be used by Well Ping.
 
 *Note: The editor is incomplete as of now and may not support all features in Well Ping.*
 
