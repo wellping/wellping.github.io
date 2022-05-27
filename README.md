@@ -4,13 +4,13 @@ This repo contains the user-/researcher-facing website for Well Ping, as well as
 
 - User-facing docs: https://wellping.github.io/ (source: https://github.com/wellping/wellping.github.io)
 - Developer-facing docs: https://wellping.github.io/wellping/ (source: https://github.com/wellping/wellping/tree/main/docs)
-- Universal Links: https://wellping.github.io/app/ (source: https://github.com/wellping/wellping.github.io/tree/master/app)
+- Universal Links: https://wellping.github.io/app/ (source: https://github.com/wellping/wellping.github.io/tree/main/app)
 
 ## Universal Links (for the `app/` folder)
 
 If the user has installed the app, they will be able to launch the app by visiting any page under https://wellping.github.io/app/ (the `app/` folder). This is very useful for pre-filling the login information, as the user simply has to click a link in the email they received to automatically have the app opened and their user login code entered.
 
-This is set up on the web-side by the [`.well-known` folder](#well-known-folder) and on the client-side by `ios.associatedDomains` and `android.intentFilters` keys in https://github.com/wellping/wellping/blob/master/app.json.
+This is set up on the web-side by the [`.well-known` folder](#well-known-folder) and on the client-side by `ios.associatedDomains` and `android.intentFilters` keys in https://github.com/wellping/wellping/blob/main/app.json.
 
 See https://docs.expo.dev/guides/linking/#universaldeep-links-without-a-custom-scheme for more information.
 
