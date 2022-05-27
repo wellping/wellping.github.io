@@ -10,6 +10,8 @@ You can log in to the demonstration mode study file with the login code `usernam
 
 Template study file: TODO
 
+---
+
 ## Archived Example Study Files
 
 These archived study files may or may not work in the latest version of Well Ping.
